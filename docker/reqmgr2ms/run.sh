@@ -78,6 +78,9 @@ for fname in $files; do
     fi
 done
 
+# Sleep for a while before starting services
+sleep 2
+
 # start the service
 # if it is ms-output, then we also need to start mongodb
 if [ -f $cdir/config-output.py ]; then
