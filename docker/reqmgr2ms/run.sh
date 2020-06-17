@@ -113,8 +113,8 @@ ps aux | grep mongodb >> /tmp/debug
 
 # Sleep for a while before starting services
 sleep 2
-echo ls -l $cdir > /tmp/debug
-ls -l $cdir > /tmp/debug 2>&1
+echo ls -l $cdir >> /tmp/debug
+ls -l $cdir >> /tmp/debug 2>&1
 
 # start the service
 # if it is ms-output, then we also need to start mongodb
