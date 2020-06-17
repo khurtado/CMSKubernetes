@@ -118,10 +118,11 @@ ls -l $cdir >> /tmp/debug 2>&1
 
 # start the service
 # if it is ms-output, then we also need to start mongodb
-if [ -f $cdir/config-output.py ]; then
-    echo "I got in this if" >> /tmp/debug
-    /data/srv/current/config/mongodb/manage start 'I did read documentation'
-fi
+#if [ -f $cdir/config-output.py ]; then
+#    echo "I got in this if" >> /tmp/debug
+#    /data/srv/current/config/mongodb/manage start 'I did read documentation'
+#fi
+
 echo Line 8 >> /tmp/debug
 date >> /tmp/debug
 echo 'ps aux | grep mongodb'
