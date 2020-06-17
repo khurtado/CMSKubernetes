@@ -128,8 +128,8 @@ date >> /tmp/debug
 echo 'ps aux | grep mongodb'
 ps aux | grep mongodb >> /tmp/debug
 
-echo /data/srv/current/config/$srv/manage start 'I did read documentation' >> /tmp/debug
-/data/srv/current/config/$srv/manage start 'I did read documentation'
+#echo /data/srv/current/config/$srv/manage start 'I did read documentation' >> /tmp/debug
+#/data/srv/current/config/$srv/manage start 'I did read documentation'
 
 echo Line 9 >> /tmp/debug
 date >> /tmp/debug
@@ -137,16 +137,17 @@ echo 'ps aux | grep mongodb'
 ps aux | grep mongodb >> /tmp/debug
 
 # run monitoring script
-if [ -f /data/monitor.sh ]; then
-    /data/monitor.sh
-fi
+#if [ -f /data/monitor.sh ]; then
+#    /data/monitor.sh
+#fi
 echo Line 10 >> /tmp/debug
 date >> /tmp/debug
 echo 'ps aux | grep mongodb'
 ps aux | grep mongodb >> /tmp/debug
 
 # start cron daemon
-sudo /usr/sbin/crond -n
+#sudo /usr/sbin/crond -n
+sleep 5
 
 echo Line 11 >> /tmp/debug
 date >> /tmp/debug
